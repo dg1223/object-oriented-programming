@@ -8,7 +8,7 @@
         - Notice the dot `.` before the file name. This is a requirement in Python 3
 - Create an `__init__.py` file in the same folder
     - This file is necessary for pip to understand that it is a Python package
-    - When a package is imported, this is the file that;s executed first
+    - When a package is imported, this is the file that's executed first
     - It doesn’t have to contain anything
     - However, it is a good practice to import some of the classes in this file so that users do not have to import those classes using their full directory path
         - For example, the file may contain `from .gaussian_distribution import Gaussian`
@@ -20,7 +20,7 @@
 
 ## **Testing the newly installed package**
 
-Type `python` in the terminal (Linux/Mac) then at the >>> prompt, type `from distributions import Gaussian.`
+Type `python` in the terminal (Linux/Mac) then at the >>> prompt, type `from distributions import Gaussian`.
 This will bring our code into memory for access. Lets try it.
 
 ```python

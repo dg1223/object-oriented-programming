@@ -20,7 +20,7 @@
 
 ## **Testing the newly installed package**
 
-Type `Python` in the terminal (Linux/Mac) then at the >>> prompt, type `from distributions import Gaussian.`
+Type `python` in the terminal (Linux/Mac) then at the >>> prompt, type `from distributions import Gaussian.`
 This will bring our code into memory for access. Lets try it.
 
 ```python

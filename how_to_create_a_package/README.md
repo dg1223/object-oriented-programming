@@ -30,3 +30,5 @@ gaussian_one.stdev
 ```
 
 It is a good practice to install Python packages in a virtual environment so that there is no interference with the original Python installation.
+
+You can uninstall the package by executing `pip uninstall distributions` in the terminal.

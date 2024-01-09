@@ -18,3 +18,6 @@ binomial = Binomial(0.25,60)
 binomial.mean
 binomial.stdev
 ```
+
+### Source code
+https://github.com/dg1223/object-oriented-programming/tree/main/upload_to_pypi

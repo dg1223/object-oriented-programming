@@ -34,6 +34,7 @@ class Binomial(Distribution):
         self.n = size
 
         Distribution.__init__(self, self.calculate_mean(), self.calculate_stdev())
+
     
     def calculate_mean(self):
     
@@ -83,8 +84,8 @@ class Binomial(Distribution):
         self.n = len(self.data)
         self.p = sum(self.data)/self.n
         # self.p = self.data.count(1)/self.n
-        self.calculate_mean()
-        self.calculate_stdev()
+        self.mean = self.calculate_mean()
+        self.stdev = self.calculate_stdev()
         
         return self.p, self.n
 
@@ -121,7 +122,7 @@ class Binomial(Distribution):
         y_axis = [zeros, ones]
         
         title = "Trial frequencies"
-        xlabel = "Result (1: success, 0: failure)"
+        xlabel = "Outcome"
         ylabel = "Frequency"
         self.generate_barchart(x_axis, y_axis, title, xlabel, ylabel)
 
@@ -201,8 +202,8 @@ class Binomial(Distribution):
         result = Binomial()
         result.p = self.p
         result.n = self.n + other.n
-        result.mean = result.calculate_mean()
-        result.stdev = result.calculate_stdev()
+        result.calculate_mean()
+        result.calculate_stdev()
         
         return result
         

@@ -1,7 +1,9 @@
 from setuptools import setup
 
-setup(name='distributions',
+setup(name='dg_probability',
       version='0.1',
-      description='Gaussian distributions',
-      packages=['distributions'],
+      description='Gaussian and Binomial distributions',
+      packages=['dg_probability'],
+      author="Shamir Alavi"
+      author_email="dummy@e.mail"
       zip_safe=False)

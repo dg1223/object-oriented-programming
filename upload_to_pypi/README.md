@@ -1,6 +1,9 @@
 # **Gaussian and Binomial Distributions**
 This package contains code to perform basic mathematical operations on Gaussian and Binomial distributions. Operations include finding the mean and standard deviation (of both sample and population), plotting histograms for Gaussian distribution and plotting frequncy bar charts for Binomial distributions.
 
+## Input data
+The project consists dummy input data `data_binomial.txt` and `data_gaussian.txt`. Please look at the unit test file `test.py` to see how you can use these files to test the package.
+
 ## Test the code
 Type `python` in the terminal (Linux/Mac) then at the >>> prompt, type `from distributions import Gaussian`.
 This will bring our code into memory for access. Lets try it.

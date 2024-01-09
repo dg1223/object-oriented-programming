@@ -1,6 +1,9 @@
 from setuptools import setup
 
-long_description = "This package contains code to perform basic mathematical operations on Gaussian and Binomial distributions. Operations include finding the mean, standard deviation (of both sample and population), plotting histograms for Gaussian distribution and plotting frequncy bar charts for Binomial distributions."
+# read the contents of your README file
+from pathlib import Path
+this_directory = Path(__file__).parent
+long_description = (this_directory / "README.md").read_text()
 
 setup(name='dg_probability',
       version='0.2',

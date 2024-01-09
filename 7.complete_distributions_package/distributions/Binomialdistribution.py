@@ -170,6 +170,7 @@ class Binomial(Distribution):
         xlabel = "Result (1: success, 0: failure)"
         ylabel = "Frequency"
         self.generate_barchart(x_axis, y_axis, title, xlabel, ylabel)
+        plt.show()
         
     def pdf(self, k):
         """Probability density function calculator for the gaussian distribution.
@@ -226,6 +227,7 @@ class Binomial(Distribution):
         xlabel = "Data"
         ylabel = "PDF"
         self.generate_barchart(k, pdf, title, xlabel, ylabel)
+        plt.show()
         
         return k, pdf
         

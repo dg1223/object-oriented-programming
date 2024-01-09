@@ -3,3 +3,5 @@
 tempCodeRunnerFile*.*
 *.pyc
 test.py
+*.egg-info
+dist

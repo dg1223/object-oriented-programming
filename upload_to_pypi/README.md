@@ -37,7 +37,7 @@ Here's some dummy data for a Binomial distribution. It contains the outcomes of 
 ```
 
 ## Test the code
-Type `python` in the terminal (Linux/Mac) then at the >>> prompt, type `from distributions import Gaussian`.
+Type `python` in the terminal (Linux/Mac) then at the >>> prompt, type `from dg_probability import Gaussian`.
 This will bring our code into memory for access. Lets try it.
 
 ```python
@@ -46,7 +46,7 @@ gaussian_one.mean
 gaussian_one.stdev
 ```
 
-Test the Binomial class by typing in the prompt `from distributions import Binomial`. Then try:
+Test the Binomial class by typing in the prompt `from dg_probability import Binomial`. Then try:
 
 ```python
 binomial = Binomial(0.25,60)
@@ -58,6 +58,10 @@ binomial.stdev
 Here's how you can test the entire Binomial distribution module using the dummy data shown in the 'Input data' section. Create a file called `data_binomial.txt` and add the dummy data for Binomial distribution to it. Save this file in the same directory where your code is.
 
 ```python
+# ignore the import statement if you 
+# already have the module imported
+from dg_probability import Binomial
+
 binomial = Binomial(0.4, 20)
 binomial.read_data_file('data_binomial.txt')
 binomial.calculate_mean()

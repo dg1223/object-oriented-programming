@@ -6,11 +6,11 @@ this_directory = Path(__file__).parent
 long_description = (this_directory / "README.md").read_text()
 
 setup(name='dg_probability',
-      version='0.3',
+      version='0.4',
       description='Gaussian and Binomial distributions',
       long_description=long_description,
       long_description_content_type="text/markdown",
       packages=['dg_probability'],
       author="Shamir Alavi",
-      author_email="dummy@e.mail",
+      author_email="dg1223.dev@gmail.com",
       zip_safe=False)
